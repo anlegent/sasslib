@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+$base-padding:0.75rem;
+$base-margin:0.75rem;
+$base-border-thickness:1px;
+$base-border-radius:20px;
+$base-font-size:1rem;
+$font-size-sm:0.75 * $base-font-size;
+$primary:#326DEE;
+$secondary:#1AC888;
+$error:#D32752;
+$info:#F6C31C;
+$colors:(
+    "primary":#001747,
+    "secondary":#640000
+);
+
+@debug map-get ($colors,"primary");
+@each $key, $colors in $colors {
+    .text-#{$key} {
+        color: $colors;
+    }
+}
+
+.text-primary {
+    color: $primary;
+}
+
+.text-secondary {
+    color: $secondary;
+}
+
+.text-error {
+    color: $error;
+}
+
+.text-info {
+    color: $info;
+}
+
+@for $i from 1 trough 9 {
+    
+}

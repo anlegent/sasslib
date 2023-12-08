@@ -8,7 +8,13 @@
         background-color: black;
     }
 }
-$color: cornflowerblue;
-h1 , p {
-    color: $color;
+$primary: #326DEE;
+h1 {
+    color: $primary;
 }
+$secondary: #326DEE;
+p {
+    color: $secondary;
+}
+
+@import "base.scss";
