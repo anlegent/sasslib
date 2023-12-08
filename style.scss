@@ -1,0 +1,14 @@
+.red {
+    width: 200px;
+    height: 200px;
+    border:  red 5px solid;
+    &__inner {
+        width: 20px;
+        height: 20px;
+        background-color: black;
+    }
+}
+$color: cornflowerblue;
+h1 , p {
+    color: $color;
+}
