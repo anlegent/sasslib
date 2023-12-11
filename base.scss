@@ -14,15 +14,15 @@ $primary:#326DEE;
 $secondary:#1AC888;
 $error:#D32752;
 $info:#F6C31C;
-$colors:(
+$color:(
     "primary":#001747,
     "secondary":#640000
 );
 
-@debug map-get ($colors,"primary");
-@each $key, $colors in $colors {
+@debug map-get ($color,"primary");
+@each $key, $color in $color {
     .text-#{$key} {
-        color: $colors;
+        color: $color;
     }
 }
 
